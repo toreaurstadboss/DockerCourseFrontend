@@ -40,7 +40,7 @@ Welcome to your new app. <br />
         {
             _isLoading = true;
             _podCasts = await HttpClient.GetFromJsonAsync<List<string?>>("https://localhost:7248/podcasts") ?? new List<string?>();
-            await Task.Delay(1200);
+            await Task.Delay(120);
         }
         finally
         {
